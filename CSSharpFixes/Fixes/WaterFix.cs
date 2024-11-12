@@ -28,8 +28,8 @@ public class WaterFix: BaseFix
         PatchNames = new List<string>
         {
             "FixWaterFloorJump",
-            "WaterLevelGravity",
-            "CategorizeUnderwater"
+            "WaterLevelGravity"
+            // "CategorizeUnderwater"
         };
     }
 }
