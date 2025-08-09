@@ -2,21 +2,21 @@
   "WaterLevelGravity": {
     "signatures": {
       "library":  "server",
-      "windows":  "3C 01 49 8B 5B 10 49 8B 7B 18 0F 97 C0 41 0F 28",
+      "windows":  "3C 02",
       "linux":    "3C 01 0F 97 C0 48 81 C4 50 01"
     }
   },
   "CheckJumpButtonWater": {
     "signatures": {
       "library": "server",
-      "windows":  "C8 42 EB ? 48 8B 4B 30",
+      "windows":  "C8 42 EB ? 4C 39 67 30",
       "linux":    "C8 42 66 0F EF E4 0F 2F 63 5C"
     }
   },
   "CPhysBox_Use": {
     "signatures": {
       "library": "server",
-      "windows":"4C 8B 47 08 48 8D 8B 2A 2A 2A 2A 48 8B 17 4C 8D 4C 24 2A",
+      "windows":"49 89 F8 90",
       "linux":  "49 8B 54 24 08 48 8D 4D E0 48 C7 45 2A 2A 2A 2A 2A"
     }
   },
@@ -30,7 +30,7 @@
   "ServerMovementUnlock": {
     "signatures": {
       "library": "server",
-      "windows":  "76 2A F2 0F 10 57 2A 0F 28 2A F3 0F 2A 2A 0F 28 2A",
+      "windows":  "EB",
       "linux":    "0F 87 2A 2A 2A 2A 49 8B 7C 24 2A E8 2A 2A 2A 2A 66 0F EF ED 66 0F D6 85"
     }
   },
@@ -44,20 +44,20 @@
   "TriggerPush_Touch": {
     "signatures": {
       "library": "server",
-      "windows":  "48 89 74 24 18 48 89 7C 24 20 55 48 8D AC 24 40 E0 FF FF",
+      "windows":  "40 55 53 57 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 02 48 8B F9",
       "linux":    "55 48 89 E5 41 57 41 56 41 55 49 89 F5 41 54 49 89 FC 53 48 81 EC 2A 2A 2A 2A E8 2A 2A 2A 2A 84 C0 74 2A"
     }
   },
   "SetGroundEntity": {
     "signatures": {
       "library": "server",
-      "windows":  "48 89 5C 24 10 48 89 6C 24 18 48 89 74 24 20 57 41 56 41 57 48 83 EC 20 33 ED",
+      "windows":  "48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 54 48 83 EC ? 44 8B 89",
       "linux":    "55 48 89 E5 41 57 41 56 49 89 D6 41 55 49 89 F5 41 54 49 89 FC 53 48 83 EC 18 8B 97 B4 06 00 00"
     }
   },
   "PassesTriggerFilters": {
     "offsets": {
-      "windows": 258,
+      "windows": 269,
       "linux": 259
     }
   }
